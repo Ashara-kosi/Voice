@@ -6,7 +6,7 @@ import pandas as pd
 import pickle
 
 
-voice_data = pd.read_csv(r'.\voice.csv')
+voice_data = pd.read_csv('voice.csv')
 
 #encoding the label
 voice_data['label'].replace(to_replace={'male':1,'female':0},inplace = True)

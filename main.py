@@ -16,7 +16,7 @@ footnote= st.container()
 
 @st.cache
 def getdata(filename):
-    voice_data = pd.read_csv(r'.\voice.csv')
+    voice_data = pd.read_csv('voice.csv')
     return voice_data
 
 with header:
@@ -28,7 +28,7 @@ with dataset:
     st.header('Voice dataset')
     st.text('I got this dataset from Kaggle which contains extracted features from voices')
 
-    voice_data = getdata(r'.\voice.csv')
+    voice_data = getdata('voice.csv')
 
     if st.checkbox('Preview Dataset'):
         data = voice_data
