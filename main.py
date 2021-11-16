@@ -21,12 +21,12 @@ def getdata(filename):
 
 with header:
     st.title('Gender Voice Recognition Classification')
-    st.write('In this project I used various classifiers to blah blah blah for now')
+  
 
 
 with dataset:
     st.header('Voice dataset')
-    st.text('I got this dataset from Kaggle')
+    st.text('I got this dataset from Kaggle which contains extracted features from voices')
 
     voice_data = getdata(r'.\voice.csv')
 
