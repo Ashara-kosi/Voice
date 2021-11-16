@@ -14,3 +14,5 @@ Installing packages
 
 Then run
 `streamlit run main.py` to view the app locally
+
+The app has been deployed to heroku and can be viewed using this link `https://streamlit-reg.herokuapp.com/`
