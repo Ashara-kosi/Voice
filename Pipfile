@@ -10,6 +10,7 @@ streamlit = "*"
 scikit-learn = "*"
 plotly = "*"
 pickle-mixin = "*"
+seaborn = "*"
 
 [requires]
 python_version = "3.8"

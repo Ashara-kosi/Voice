@@ -11,8 +11,10 @@ voice_data = pd.read_csv('voice.csv')
 #encoding the label
 voice_data['label'].replace(to_replace={'male':1,'female':0},inplace = True)
 #seperating the dataset to independent and dependent variables
-y = voice_data.label.values.reshape(-1,1)
-x = voice_data.drop(["label"], axis=1)
+#Selecting features from the heatmap that a greater than 0 for the independent variables
+new_data = voice_data[['sd','IQR','skew','kurt','sp.ent','sfm','modindx','Q75','label']]
+y = new_data.label.values.reshape(-1,1)
+x = new_data.drop(["label"], axis=1)
 
 #transforming the train and test data and training the dataset
 for i in range (0,1000):
